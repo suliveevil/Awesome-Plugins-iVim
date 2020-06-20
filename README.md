@@ -1,5 +1,3 @@
-# Awesome-Plugins-iVim
-
 # Awesome Plugins - iVim
 
 plugins works on iVim
