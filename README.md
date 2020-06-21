@@ -4,18 +4,22 @@ plugins works on iVim
 
 ## __Python__
 
-| Plugin      | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---         | ---     | ---    | ---  | ---        | ---         |
-| python-mode |         |        |      |            |             |
+Python
 
+| Plugin      | Vim-ver | Keymap | Lang   | Lang-tools      | Conflict    |
+| ---         | ---     | ---    | ---    | ---             | ---         |
+| python-mode |         |        | Python | pylama flake8 … | jedi-vim    |
+| jedi-vim    |         |        | Python | jedi            | python-mode |
 
 ## Chinese 中文
+
+中文
 
 | Plugin         | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
 | ---            | ---     | ---       | ---  | ---        | ---         |
 | ZFVimIM        |         | Customize | VimL |            |             |
-| ZFVimIM_pinyin |         |           | VimL |            |             |
-| ZFVimIM_wubi   |         |           | VimL |            |             |
+| ZFVimIM_pinyin |         |           | txt  |            | ZFVimIM     |
+| ZFVimIM_wubi   |         |           | txt  |            | ZFVimIM     |
 | ime.vim        |         | Customize | VimL |            |             |
 
 
@@ -23,12 +27,15 @@ plugins works on iVim
 
 ## __viml__
 
+vim script: debug test run
 | Plugin | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
 | ---    | ---     | ---    | ---  | ---        | ---         |
 | Vfix   |         |        |      |            |             |
 
 
 ## comment
+
+comment docstring
 
 | Plugin         | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
 | ---            | ---     | ---    | ---  | ---        | ---         |
@@ -39,16 +46,19 @@ plugins works on iVim
 
 ## complete
 
+completion framework
+
 | Plugin         | Vim-ver | Keymap | Lang   | Lang-tools | Plugin-Deps | Conflict        |
 | ---            | ---     | ---    | ---    | ---        | ---         | ---             |
 | vim-mucomplete |         |        |        |            |             |                 |
 | asyncomplete   |         |        |        |            |             |                 |
 | python-mode    |         |        | Python | jedi       |             | jedi-vim        |
-| jedi-vim       |         |        | Python | jedi       |             | python-mode     |
 | neocomplete    |         |        | Lua    |            |             | UltiSnips-<Tab> |
 | deoplete       |         |        |        |            |             |                 |
 
 ## complete-engine
+
+completion engine
 
 | Plugin             | Vim-ver | Keymap | Lang     | Lang-tools | Plugin-Deps | Conflict        |
 | ---                | ---     | ---    | ---      | ---        | ---         | ---             |
@@ -57,25 +67,34 @@ plugins works on iVim
 
 ## complete-snippets
 
+snippets: UltiSnips snipMate VSCode-snippets
+
 | Plugin             | Vim-ver | Keymap | Lang     | Lang-tools | Plugin-Deps |
 | ---                | ---     | ---    | ---      | ---        | ---         |
 | honza/vim-snippets |         |        | snippets |            |             |
+| VSCode snippets    |         |        | JSON     |            |             |
 
 ## edit
 
-| Plugin              | Vim-ver | Keymap    | Lang     | Lang-tools | Plugin-Deps |
-| ---                 | ---     | ---       | ---      | ---        | ---         |
-| Auto-Pairs          |         |           | VimL     |            |             |
-| YankRing            |         |           | VimL     |            |             |
+edit region clipboard/yank
+
+| Plugin     | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---        | ---     | ---    | ---  | ---        | ---         |
+| Auto-Pairs |         |        | VimL |            |             |
+| NrrRgn     |         |        | VimL |            |             |
+| YankRing   |         |        | VimL |            |             |
 
 
 ## explore
 
+explore file folder
 | Plugin              | Vim-ver | Keymap    | Lang     | Lang-tools | Plugin-Deps |
 | ---                 | ---     | ---       | ---      | ---        | ---         |
 | nerdtree            |         | Buffer    | VimL     |            |             |
 
 ## filetype
+
+filetype: csv markdown org
 
 | Plugin              | Vim-ver | Keymap    | Lang     | Lang-tools | Plugin-Deps |
 | ---                 | ---     | ---       | ---      | ---        | ---         |
@@ -84,6 +103,8 @@ plugins works on iVim
 | vim-orgmode         |         |           | VimL     |            |             |
 
 ## highlight
+
+highlight: pairs words yanked
 
 | Plugin              | Vim-ver | Keymap    | Lang     | Lang-tools | Plugin-Deps |
 | ---                 | ---     | ---       | ---      | ---        | ---         |
@@ -94,6 +115,8 @@ plugins works on iVim
 
 ## indent
 
+indent
+
 | Plugin     | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
 | ---        | ---     | ---    | ---  | ---        | ---         |
 | IndGuide   |         |        | VimL |            |             |
@@ -101,6 +124,8 @@ plugins works on iVim
 
 
 ## key
+
+keymap keybinding
 
 | Plugin        | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
 | ---           | ---     | ---       | ---  | ---        | ---         |
@@ -110,12 +135,16 @@ plugins works on iVim
 
 ## lsp
 
+lsp: language server protocol
+
 | Plugin  | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
 | ---     | ---     | ---    | ---  | ---        | ---         |
 | coc     |         |        |      |            |             |
 | vim-lsp |         |        |      |            |             |
 
 ## motion
+
+motion
 
 | Plugin             | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
 | ---                | ---     | ---       | ---  | ---        | ---         |
@@ -127,21 +156,29 @@ plugins works on iVim
 
 ## misc
 
-| Plugin | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---    | ---     | ---    | ---  | ---        | ---         |
-|        |         |        |      |            |             |
+| Plugin   | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---      | ---     | ---    | ---  | ---        | ---         |
+| swy-ivim |         |        |      |            |             |
 
 
 ## syntax
+
+syntax for filetypes
 
 | Plugin       | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
 | ---          | ---     | ---    | ---  | ---        | ---         |
 | vim-polyglot |         |        |      |            |             |
 
-## viml
+## UI
 
-| Plugin | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---    | ---     | ---    | ---  | ---        | ---         |
-| Vfix   |         |        |      |            |             |
+User Interface
+
+| Plugin             | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---                | ---     | ---    | ---  | ---        | ---         |
+| vim-airline        |         |        |      |            |             |
+| vim-airline-themes |         |        |      |            |             |
+| vim-pencil         |         |        |      |            |             |
+| goyo               |         |        |      |            |             |
+| limelight          |         |        |      |            |             |
 
 
