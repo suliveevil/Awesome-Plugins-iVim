@@ -28,20 +28,21 @@ Python
 ## __viml__
 
 vim script: debug test run
-| Plugin | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---    | ---     | ---    | ---  | ---        | ---         |
-| Vfix   |         |        |      |            |             |
+
+| Advice    | Plugin | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---       | ---    | ---     | ---    | ---  | ---        | ---         |
+| Must Have | Vfix   |         |        |      |            |             |
 
 
 ## comment
 
 comment docstring
 
-| Plugin         | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---            | ---     | ---    | ---  | ---        | ---         |
-| nerdcommenter  | 8.1     | Normal | VimL |            |             |
-| vim-commentary |         | Normal | VimL |            |             |
-| tcomment       |         | Normal | VimL |            | tlib_vim    |
+| Advice    | Plugin         | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---       | ---            | ---     | ---    | ---  | ---        | ---         |
+| Must Have | nerdcommenter  | 8.1     | Normal | VimL |            |             |
+|           | vim-commentary |         | Normal | VimL |            |             |
+|           | tcomment       |         | Normal | VimL |            | tlib_vim    |
 
 
 ## complete
@@ -60,79 +61,85 @@ completion framework
 
 completion engine
 
-| Plugin             | Vim-ver | Keymap | Lang     | Lang-tools | Plugin-Deps | Conflict        |
-| ---                | ---     | ---    | ---      | ---        | ---         | ---             |
-| UltiSnips          |         | N S    | Python   |            |             |                 |
-| vim-vsnip          |         |        |          |            |             |                 |
+| Advice    | Plugin    | Vim-ver | Keymap | Lang   | Lang-tools | Plugin-Deps | Conflict |
+| ---       | ---       | ---     | ---    | ---    | ---        | ---         | ---      |
+| Must Have | UltiSnips |         | N S    | Python |            |             |          |
+|           | vim-vsnip |         |        |        |            |             |          |
+
 
 ## complete-snippets
 
 snippets: UltiSnips snipMate VSCode-snippets
 
-| Plugin             | Vim-ver | Keymap | Lang     | Lang-tools | Plugin-Deps |
-| ---                | ---     | ---    | ---      | ---        | ---         |
-| honza/vim-snippets |         |        | snippets |            |             |
-| VSCode snippets    |         |        | JSON     |            |             |
+| Advice    | Plugin             | Vim-ver | Keymap | Lang     | Lang-tools | Plugin-Deps |
+| ---       | ---                | ---     | ---    | ---      | ---        | ---         |
+| Must Have | honza/vim-snippets |         |        | snippets |            |             |
+|           | VSCode snippets    |         |        | JSON     |            |             |
 
-## edit
+## edit fold region yank/clipboard
 
-edit region clipboard/yank
+edit fold region clipboard/yank
 
-| Plugin     | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---        | ---     | ---    | ---  | ---        | ---         |
-| Auto-Pairs |         |        | VimL |            |             |
-| NrrRgn     |         |        | VimL |            |             |
-| YankRing   |         |        | VimL |            |             |
+| Advice        | Plugin         | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---            | ---     | ---    | ---  | ---        | ---         |
+| Must Have     | Auto-Pairs     |         |        | VimL |            |             |
+| Highly Advice | vim-fold-cycle |         |        | VimL |            |             |
+| Highly Advice | NrrRgn         |         |        | VimL |            |             |
+| Highly Advice | YankRing       |         |        | VimL |            |             |
 
 
 ## explore
 
 explore file folder
 
-| Plugin   | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
-| ---      | ---     | ---       | ---  | ---        | ---         |
-| nerdtree |         | OwnBuffer | VimL |            |             |
+| Advice        | Plugin      | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---         | ---     | ---       | ---  | ---        | ---         |
+| Highly Advice | nerdtree    |         | OwnBuffer | VimL |            |             |
+|               | fern        |         |           | VimL |            |             |
+|               | defx        |         |           | VimL |            |             |
+|               | vim-dirvish |         |           | VimL |            |             |
+|               | vaffle      |         |           | VimL |            |             |
 
 ## filetype
 
 filetype: csv markdown org
 
-| Plugin              | Vim-ver | Keymap    | Lang     | Lang-tools | Plugin-Deps |
-| ---                 | ---     | ---       | ---      | ---        | ---         |
-| csv.vim             |         |           | VimL     |            |             |
-| vim-markdown        |         |           | VimL     |            |             |
-| vim-orgmode         |         |           | VimL     |            |             |
+| Advice    | Plugin       | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---       | ---          | ---     | ---    | ---  | ---        | ---         |
+|           | csv.vim      |         |        | VimL |            |             |
+| Must Have | vim-markdown |         |        | VimL |            |             |
+|           | vim-orgmode  |         |        | VimL |            |             |
 
 ## highlight
 
 highlight: pairs words yanked
 
-| Plugin              | Vim-ver | Keymap    | Lang     | Lang-tools | Plugin-Deps |
-| ---                 | ---     | ---       | ---      | ---        | ---         |
-| hiPairs             |         |           | VimL     |            |             |
-| vim-cursorword      |         |           | VimL     |            |             |
-| vim-highlightyanked |         |           | VimL     |            |             |
-| vim-illunimate      |         |           | VimL     |            |             |
+| Advice        | Plugin              | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---                 | ---     | ---    | ---  | ---        | ---         |
+| Must Have     | hiPairs             |         |        | VimL |            |             |
+| Highly Advice | vim-cursorword      |         |        | VimL |            |             |
+| Highly Advice | vim-highlightyanked |         |        | VimL |            |             |
+| Highly Advice | vim-illunimate      |         |        | VimL |            |             |
 
 ## indent
 
 indent
 
-| Plugin     | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---        | ---     | ---    | ---  | ---        | ---         |
-| IndGuide   |         |        | VimL |            |             |
-| indentLine |         |        | VimL |            |             |
+| Advice        | Plugin     | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---        | ---     | ---    | ---  | ---        | ---         |
+|               | IndGuide   |         |        | VimL |            |             |
+| Highly Advice | indentLine |         |        | VimL |            |             |
 
 
 ## key
 
 keymap keybinding
 
-| Plugin        | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
-| ---           | ---     | ---       | ---  | ---        | ---         |
-| do.vim        |         |           | VimL |            |             |
-| vim-freekeys  |         |           | VimL |            |             |
-| vim-which-key |         | Customize | VimL |            |             |
+| Advice        | Plugin        | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---           | ---     | ---       | ---  | ---        | ---         |
+| Highly Advice | do.vim        |         |           | VimL |            |             |
+|               | vim-freekeys  |         |           | VimL |            |             |
+| Must Have     | vim-which-key |         | Customize | VimL |            |             |
 
 ## lsp
 
@@ -147,20 +154,20 @@ lsp: language server protocol
 
 motion
 
-| Plugin             | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
-| ---                | ---     | ---       | ---  | ---        | ---         |
-| vim-easymotion     |         | Customize | VimL |            |             |
-| vim-easymotion-chs |         |           | VimL |            |             |
-| vim-sneak          |         | Normal    | VimL |            |             |
+| Advice        | Plugin             | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---                | ---     | ---       | ---  | ---        | ---         |
+| Highly Advice | vim-easymotion     |         | Customize | VimL |            |             |
+| Highly Advice | vim-easymotion-chs |         |           | VimL |            |             |
+|               | vim-sneak          |         | Normal    | VimL |            |             |
 
 
 
 ## misc
 
-| Plugin   | Vim-ver | Keymap | Lang | Lang-tools | TerminalTool-Deps |
-| ---      | ---     | ---    | ---  | ---        | ---               |
-| swy-ivim |         |        |      |            |                   |
-| vim-tldr |         |        |      |            | curl unzip git    |
+| Advice        | Plugin   | Vim-ver | Keymap | Lang | Lang-tools | TerminalTool-Deps |
+| ---           | ---      | ---     | ---    | ---  | ---        | ---               |
+|               | swy-ivim |         |        |      |            |                   |
+| Highly Advice | vim-tldr |         |        |      |            | curl unzip git    |
 
 
 ## syntax
@@ -175,12 +182,12 @@ syntax for filetypes
 
 User Interface
 
-| Plugin             | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---                | ---     | ---    | ---  | ---        | ---         |
-| vim-airline        |         |        |      |            |             |
-| vim-airline-themes |         |        |      |            |             |
-| vim-pencil         |         |        |      |            |             |
-| goyo               |         |        |      |            |             |
-| limelight          |         |        |      |            |             |
+| Advice        | Plugin             | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---                | ---     | ---    | ---  | ---        | ---         |
+| Must Have     | vim-airline        |         |        |      |            |             |
+| Highly Advice | vim-airline-themes |         |        |      |            |             |
+|               | vim-pencil         |         |        |      |            |             |
+|               | goyo               |         |        |      |            |             |
+|               | limelight          |         |        |      |            |             |
 
 
