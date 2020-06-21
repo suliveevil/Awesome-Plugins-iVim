@@ -177,10 +177,11 @@ buffer search
 
 file folder search
 
-| Advice | Plugin      | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---    | ---         | ---     | ---    | ---  | ---        | ---         |
-|        | vim-grepper |         |        |      |            |             |
-|        | ferret      |         |        |      |            |             |
+| Advice | Plugin      | Vim-ver | Keymap | Lang | CLI-Deps |
+| ---    | ---         | ---     | ---    | ---  | ---      |
+|        | vim-grepper |         |        |      |          |
+|        | ferret      |         |        |      |          |
+|        | fzf.vim     |         |        |      | fzf      |
 
 
 ### mru
