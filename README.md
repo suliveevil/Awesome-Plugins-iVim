@@ -13,7 +13,7 @@ Python
 
 ## Chinese 中文
 
-中文
+中文相关插件
 
 | Plugin         | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
 | ---            | ---     | ---       | ---  | ---        | ---         |
@@ -34,6 +34,17 @@ vim script: debug test run
 | Must Have | Vfix   |         |        |      |            |             |
 
 
+## code: debug/lint run test
+
+comment docstring
+
+| Advice | Plugin    | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---    | ---       | ---     | ---    | ---  | ---        | ---         |
+|        | ale       |         |        |      |            |             |
+|        | syntastic |         |        |      |            |             |
+|        |           |         |        |      |            |             |
+
+
 ## comment
 
 comment docstring
@@ -45,19 +56,19 @@ comment docstring
 |           | tcomment       |         | Normal | VimL |            | tlib_vim    |
 
 
-## complete
+## complete-framework
 
 completion framework
 
-| Plugin         | Vim-ver | Keymap | Lang   | Lang-tools | Plugin-Deps | Conflict        |
-| ---            | ---     | ---    | ---    | ---        | ---         | ---             |
-| vim-mucomplete |         |        |        |            |             |                 |
-| asyncomplete   |         |        |        |            |             |                 |
-| python-mode    |         |        | Python | jedi       |             | jedi-vim        |
-| neocomplete    |         |        | Lua    |            |             | UltiSnips-<Tab> |
-| deoplete       |         |        |        |            |             |                 |
+| Plugin         | Vim-ver | Keymap | Lang   | Lang-tools | LT-Deps          | Conflict        |
+| ---            | ---     | ---    | ---    | ---        | ---              | ---             |
+| vim-mucomplete |         |        | VimL   |            |                  |                 |
+| asyncomplete   |         |        | VimL   |            |                  |                 |
+| python-mode    |         |        | Python | jedi       |                  | jedi-vim        |
+| neocomplete    |         |        | Lua    |            |                  | UltiSnips-<Tab> |
+| deoplete       |         |        | Python | pynvim     | msgpack greenlet |                 |
 
-## complete-engine
+## complete-snippet engine
 
 completion engine
 
@@ -92,13 +103,13 @@ edit fold region clipboard/yank
 
 explore file folder
 
-| Advice        | Plugin      | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
-| ---           | ---         | ---     | ---       | ---  | ---        | ---         |
-| Highly Advice | nerdtree    |         | OwnBuffer | VimL |            |             |
-|               | fern        |         |           | VimL |            |             |
-|               | defx        |         |           | VimL |            |             |
-|               | vim-dirvish |         |           | VimL |            |             |
-|               | vaffle      |         |           | VimL |            |             |
+| Advice    | Plugin      | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
+| ---       | ---         | ---     | ---       | ---  | ---        | ---         |
+| Must Have | nerdtree    |         | OwnBuffer | VimL |            |             |
+|           | fern        |         |           | VimL |            |             |
+|           | defx        |         |           | VimL |            |             |
+|           | vim-dirvish |         |           | VimL |            |             |
+|           | vaffle      |         |           | VimL |            |             |
 
 ## filetype
 
