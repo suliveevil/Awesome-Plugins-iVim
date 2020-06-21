@@ -65,6 +65,7 @@ completion framework
 | ---            | ---     | ---    | ---    | ---        | ---              | ---             |
 | vim-mucomplete |         |        | VimL   |            |                  |                 |
 | asyncomplete   |         |        | VimL   |            |                  |                 |
+| completor      |         |        | Python |            |                  |                 |
 | python-mode    |         |        | Python | jedi       |                  | jedi-vim        |
 | neocomplete    |         |        | Lua    |            |                  | UltiSnips-<Tab> |
 | deoplete       |         |        | Python | pynvim     | msgpack greenlet |                 |
@@ -134,6 +135,7 @@ clipboard/yank
 
 ## explore
 
+
 explore file folder
 
 | Advice    | Plugin      | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
@@ -143,6 +145,54 @@ explore file folder
 |           | defx        |         |           | VimL |            |             |
 |           | vim-dirvish |         |           | VimL |            |             |
 |           | vaffle      |         |           | VimL |            |             |
+
+
+## find & search
+
+
+find and search: buffer file folder mru text
+
+### __multi__
+
+multi purpose tool
+
+| Advice | Plugin  | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---    | ---     | ---     | ---    | ---  | ---        | ---         |
+|        | ctrlp   |         |        | VimL |            |             |
+|        | LeaderF |         |        | VimL |            |             |
+
+
+### buffer
+
+buffer search
+
+| Advice | Plugin | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---    | ---    | ---     | ---    | ---  | ---        | ---         |
+|        |        |         |        |      |            |             |
+
+### file folder
+
+file folder search
+
+| Advice | Plugin      | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---    | ---         | ---     | ---    | ---  | ---        | ---         |
+|        | vim-grepper |         |        |      |            |             |
+|        | ferret      |         |        |      |            |             |
+
+
+### mru
+
+| Advice    | Plugin      | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
+| ---       | ---         | ---     | ---       | ---  | ---        | ---         |
+|           | mru      |         |           | VimL |            |             |
+
+
+### text/file content
+
+| Advice | Plugin | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---    | ---    | ---     | ---    | ---  | ---        | ---         |
+|        | loup   |         |        | VimL |            |             |
+
 
 ## filetype
 
