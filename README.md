@@ -156,19 +156,22 @@ find and search: buffer file folder mru text
 
 multi purpose tool
 
-| Advice | Plugin  | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---    | ---     | ---     | ---    | ---  | ---        | ---         |
-|        | ctrlp   |         |        | VimL |            |             |
-|        | LeaderF |         |        | VimL |            |             |
+| Advice | Plugin    | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---    | ---       | ---     | ---    | ---  | ---        | ---         |
+|        | ctrlp     |         |        | VimL |            |             |
+|        | searchvim |         |        | VimL |            |             |
+|        | LeaderF   |         |        | VimL |            |             |
 
 
-### buffer
+### buffer in-buffer-search
 
 buffer search
 
-| Advice | Plugin | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---    | ---    | ---     | ---    | ---  | ---        | ---         |
-|        |        |         |        |      |            |             |
+| Advice | Plugin        | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---    | ---           | ---     | ---    | ---  | ---        | ---         |
+|        | is.vim        |         |        |      |            |             |
+|        | incsearch.vim |         |        |      |            |             |
+|        | vim-anzu      |         |        |      |            |             |
 
 ### file folder
 
