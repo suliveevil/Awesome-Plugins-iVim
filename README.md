@@ -88,9 +88,10 @@ edit region clipboard/yank
 ## explore
 
 explore file folder
-| Plugin              | Vim-ver | Keymap    | Lang     | Lang-tools | Plugin-Deps |
-| ---                 | ---     | ---       | ---      | ---        | ---         |
-| nerdtree            |         | Buffer    | VimL     |            |             |
+
+| Plugin   | Vim-ver | Keymap    | Lang | Lang-tools | Plugin-Deps |
+| ---      | ---     | ---       | ---  | ---        | ---         |
+| nerdtree |         | OwnBuffer | VimL |            |             |
 
 ## filetype
 
@@ -137,10 +138,10 @@ keymap keybinding
 
 lsp: language server protocol
 
-| Plugin  | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---     | ---     | ---    | ---  | ---        | ---         |
-| coc     |         |        |      |            |             |
-| vim-lsp |         |        |      |            |             |
+| Plugin  | Vim-ver | Keymap | Lang       | Lang-tools  | TerminalTool-Deps |
+| ---     | ---     | ---    | ---        | ---         | ---               |
+| coc     |         |        | TypeScript | Node.js npm |                   |
+| vim-lsp |         |        |            |             |                   |
 
 ## motion
 
@@ -156,9 +157,10 @@ motion
 
 ## misc
 
-| Plugin   | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---      | ---     | ---    | ---  | ---        | ---         |
-| swy-ivim |         |        |      |            |             |
+| Plugin   | Vim-ver | Keymap | Lang | Lang-tools | TerminalTool-Deps |
+| ---      | ---     | ---    | ---  | ---        | ---               |
+| swy-ivim |         |        |      |            |                   |
+| vim-tldr |         |        |      |            | curl unzip git    |
 
 
 ## syntax
