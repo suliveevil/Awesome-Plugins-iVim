@@ -6,10 +6,11 @@ plugins works on iVim
 
 Python
 
-| Plugin      | Vim-ver | Keymap | Lang   | Lang-tools      | Conflict    |
-| ---         | ---     | ---    | ---    | ---             | ---         |
-| python-mode |         |        | Python | pylama flake8 … | jedi-vim    |
-| jedi-vim    |         |        | Python | jedi            | python-mode |
+| Class    | Plugin      | Vim-ver | Keymap | Lang   | Lang-tools      | Conflict    |
+| ---      | ---         | ---     | ---    | ---    | ---             | ---         |
+| misc     | python-mode |         |        | Python | pylama flake8 … | jedi-vim    |
+| complete | jedi-vim    |         |        | Python | jedi            | python-mode |
+| textobj  | pythonsense |         |        |        |                 |             |
 
 ## Chinese 中文
 
@@ -34,15 +35,15 @@ vim script: debug test run
 | Must Have | Vfix   |         |        |      |            |             |
 
 
-## code: debug/lint run test
+## code: debug/lint make run test
 
 comment docstring
 
 | Advice | Plugin    | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
 | ---    | ---       | ---     | ---    | ---  | ---        | ---         |
+|        | neomake   |         |        |      |            |             |
 |        | ale       |         |        |      |            |             |
 |        | syntastic |         |        |      |            |             |
-|        |           |         |        |      |            |             |
 
 
 ## comment
@@ -87,16 +88,48 @@ snippets: UltiSnips snipMate VSCode-snippets
 | Must Have | honza/vim-snippets |         |        | snippets |            |             |
 |           | VSCode snippets    |         |        | JSON     |            |             |
 
-## edit fold region yank/clipboard
+## edit fold region textobj yank/clipboard
 
-edit fold region clipboard/yank
+edit fold region textobj clipboard/yank
 
-| Advice        | Plugin         | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-| ---           | ---            | ---     | ---    | ---  | ---        | ---         |
-| Must Have     | Auto-Pairs     |         |        | VimL |            |             |
-| Highly Advice | vim-fold-cycle |         |        | VimL |            |             |
-| Highly Advice | NrrRgn         |         |        | VimL |            |             |
-| Highly Advice | YankRing       |         |        | VimL |            |             |
+### edit
+
+| Advice        | Plugin           | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---              | ---     | ---    | ---  | ---        | ---         |
+| Must Have     | Auto-Pairs       |         |        | VimL |            |             |
+
+### fold
+
+| Advice        | Plugin           | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---              | ---     | ---    | ---  | ---        | ---         |
+| Highly Advice | vim-fold-cycle   |         |        | VimL |            |             |
+|   | vxfold   |         |        | VimL |            |             |
+
+### region
+
+region
+
+| Advice        | Plugin           | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---              | ---     | ---    | ---  | ---        | ---         |
+| Highly Advice | NrrRgn           |         |        | VimL |            |             |
+
+
+### textobj
+
+textobj
+
+| Advice        | Plugin           | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---              | ---     | ---    | ---  | ---        | ---         |
+| Highly Advice | pythonsense      |         |        |      |            |             |
+| Highly Advice | vim-textobj-user |         |        | VimL |            |             |
+
+### clipboard/yank
+
+clipboard/yank
+
+| Advice        | Plugin           | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---           | ---              | ---     | ---    | ---  | ---        | ---         |
+| Highly Advice | YankRing         |         |        | VimL |            |             |
 
 
 ## explore
@@ -118,6 +151,8 @@ filetype: csv markdown org
 | Advice    | Plugin       | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
 | ---       | ---          | ---     | ---    | ---  | ---        | ---         |
 |           | csv.vim      |         |        | VimL |            |             |
+|           | vimwiki      |         |        | VimL |            |             |
+|           | vimtex       |         |        | VimL |            |             |
 | Must Have | vim-markdown |         |        | VimL |            |             |
 |           | vim-orgmode  |         |        | VimL |            |             |
 
@@ -156,10 +191,11 @@ keymap keybinding
 
 lsp: language server protocol
 
-| Plugin  | Vim-ver | Keymap | Lang       | Lang-tools  | TerminalTool-Deps |
-| ---     | ---     | ---    | ---        | ---         | ---               |
-| coc     |         |        | TypeScript | Node.js npm |                   |
-| vim-lsp |         |        |            |             |                   |
+| Plugin                | Vim-ver | Keymap | Lang       | Lang-tools  | TerminalTool-Deps |
+| ---                   | ---     | ---    | ---        | ---         | ---               |
+| vim-lsp               |         |        |            |             |                   |
+| coc.nvim              |         |        | TypeScript | Node.js npm |                   |
+| LanguageClient-neovim |         |        | Rust       |             |                   |
 
 ## motion
 
@@ -201,4 +237,13 @@ User Interface
 |               | goyo               |         |        |      |            |             |
 |               | limelight          |         |        |      |            |             |
 
+
+## work with other CLI tools
+
+mostly not avaliable on iVim
+
+| Advice | Plugin        | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+| ---    | ---           | ---     | ---    | ---  | ---        | ---         |
+|        | vim-fugitive  |         |        |      |            |             |
+|        | vim-gitgutter |         |        |      |            |             |
 
