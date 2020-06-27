@@ -1,6 +1,6 @@
 # Awesome Plugins - iVim
 
-plugins works on iVim, See [the list](./All_My_plugins.md)
+plugins works on iVim, See [the list](./My_Vim_Plugins.md)
 
 ## __Python__
 
