@@ -36,6 +36,19 @@ vim script: debug test run
 | Must Have | Vfix   |         |        |      |            |             |
 
 
+## cmdmode ex-mode terminal
+
+cmd ex term
+
+| Plugin       | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+|--------------|---------|--------|------|------------|-------------|
+| vim-floaterm |         |        |      |            |             |
+| vim-repl     |         |        |      |            |             |
+| vim-ripple   |         |        |      |            |             |
+| codi         |         |        |      |            |             |
+| Deol         |         |        |      |            |             |
+| jupyter-vim  |         |        |      |            |             |
+
 ## code: debug/lint make run tahs test
 
 ### debug lint
@@ -55,12 +68,15 @@ vim script: debug test run
 
 tags: view generate update
 
-| Advice | Plugin      | Vim-ver | Keymap | Lang | Lang-tools | Deps  |
-|--------|-------------|---------|--------|------|------------|-------|
-|        | tagbar      |         |        |      |            | NO    |
-|        | taglist     |         |        |      |            | ctags |
-|        | vimtags_vim |         |        |      |            | NO    |
-|        | vista.vim   |         |        |      |            | ctags |
+| Advice        | Plugin        | Vim-ver | Keymap | Lang | Lang-tools | Deps  |
+|---------------|---------------|---------|--------|------|------------|-------|
+| Highly Advice | tagbar        |         |        |      |            | NO    |
+| Highly Advice | taglist       |         |        |      |            | ctags |
+| Highly Advice | vimtags_vim   |         |        |      |            | NO    |
+|               | vista.vim     |         |        |      |            | ctags |
+| Not Good      | vim-autotag   |         |        |      |            | ctags |
+|               | vim-bgtags    |         |        |      |            | ctags |
+|               | vim-gutentags |         |        |      |            | ctags |
 
 ## comment
 
@@ -114,12 +130,15 @@ edit fold region textobj clipboard/register/yank
 | Advice    | Plugin     | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
 |-----------|------------|---------|--------|------|------------|-------------|
 | Must Have | Auto-Pairs |         |        | VimL |            |             |
+| Must Have | splitjoin  |         |        | VimL |            |             |
 |           | vim-move   |         |        | VimL |            |             |
 
 ### fold
 
 | Advice        | Plugin         | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
 |---------------|----------------|---------|--------|------|------------|-------------|
+| Highly Advice | FastFold       |         | Yes    | VimL |            |             |
+| Highly Advice | FoldText       |         |        | VimL |            |             |
 | Highly Advice | vim-fold-cycle |         |        | VimL |            |             |
 |               | vxfold         |         |        | VimL |            |             |
 
@@ -179,6 +198,17 @@ clipboard register yank
 
 find and search: buffer file folder mru text
 
+### buffer in-buffer-search
+
+buffer search
+
+| Advice | Plugin        | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
+|--------|---------------|---------|--------|------|------------|-------------|
+|        | is.vim        |         |        |      |            |             |
+|        | incsearch.vim |         |        |      |            |             |
+|        | vim-anzu      |         |        |      |            |             |
+
+
 ### __multi__
 
 multi purpose tool
@@ -189,16 +219,6 @@ multi purpose tool
 |        | searchvim |         |        | VimL |            |             |
 |        | LeaderF   |         |        | VimL |            |             |
 
-
-### buffer in-buffer-search
-
-buffer search
-
-| Advice | Plugin        | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-|--------|---------------|---------|--------|------|------------|-------------|
-|        | is.vim        |         |        |      |            |             |
-|        | incsearch.vim |         |        |      |            |             |
-|        | vim-anzu      |         |        |      |            |             |
 
 ### file folder
 
@@ -292,6 +312,8 @@ motion
 
 ## misc
 
+misc tools
+
 | Advice        | Plugin   | Vim-ver | Keymap | Lang | Lang-tools | TerminalTool-Deps |
 |---------------|----------|---------|--------|------|------------|-------------------|
 |               | swy-ivim |         |        |      |            |                   |
@@ -307,17 +329,6 @@ syntax for filetypes
 | vim-polyglot |         |        |      |            |             |
 
 
-## terminal
-
-| Plugin       | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
-|--------------|---------|--------|------|------------|-------------|
-| vim-floaterm |         |        |      |            |             |
-| vim-repl     |         |        |      |            |             |
-| vim-ripple   |         |        |      |            |             |
-| codi         |         |        |      |            |             |
-| Deol         |         |        |      |            |             |
-| jupyter-vim  |         |        |      |            |             |
-
 ## UI
 
 User Interface
@@ -325,7 +336,10 @@ User Interface
 | Advice        | Plugin             | Vim-ver | Keymap | Lang | Lang-tools | Plugin-Deps |
 |---------------|--------------------|---------|--------|------|------------|-------------|
 | Must Have     | vim-airline        |         |        |      |            |             |
+| Must Have     | traces.vim         |         |        |      |            |             |
+| Highly Advice | vim-airline        |         |        |      |            |             |
 | Highly Advice | vim-airline-themes |         |        |      |            |             |
+| Highly Advice | vim-airline-clock  |         |        |      |            |             |
 |               | vim-pencil         |         |        |      |            |             |
 |               | goyo               |         |        |      |            |             |
 |               | limelight          |         |        |      |            |             |
